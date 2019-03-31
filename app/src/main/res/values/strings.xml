@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">email</string>
+    <string name="to_database">To DataBase</string>
+    <string name="name">Name</string>
+
+    <array name="type">
+        <item>Student</item>
+        <item>Faculty</item>
+    </array>
+</resources>
