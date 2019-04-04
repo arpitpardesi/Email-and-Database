@@ -94,6 +94,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         if(task.isSuccessful()){
                             //display some message here
                             Toast.makeText(MainActivity.this,"Successfully registered",Toast.LENGTH_LONG).show();
+                            startActivity(new Intent(MainActivity.this, MainLogin.class));
                         }else{
                             //display some message here
                             Toast.makeText(MainActivity.this,"Registration Error",Toast.LENGTH_LONG).show();
@@ -112,5 +113,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     public void data(View view) {
         startActivity(new Intent(this, MainData.class));
+    }
+
+    public void login(View view) {
+        startActivity(new Intent(this,MainLogin.class));
     }
 }
